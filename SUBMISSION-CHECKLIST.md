@@ -17,7 +17,7 @@ Complete this in your cloned project before your final push.
 
 ```bash
 git status --short
-git add Assets ProjectSettings Packages README.md reflection.md ai-use.md hygiene-check.md screenshot.png
+git add Assets ProjectSettings Packages README.md reflection.md ai-use.md screenshot.png
 git status --short
 ```
 
@@ -25,7 +25,6 @@ git status --short
 - [ ] It includes `ProjectSettings/`, `Packages/manifest.json`, and
       `Packages/packages-lock.json`.
 - [ ] It includes completed `reflection.md`, `ai-use.md`, and `screenshot.png`.
-      (`hygiene-check.md` was due earlier, on September 20.)
 - [ ] It does **not** include `Library/`, `Temp/`, `Logs/`, `Build/`, a
       `.unitypackage`, or files from a Synty or other asset pack.
 

@@ -66,7 +66,6 @@ Files** (**Edit > Project Settings > Editor**). Leave both settings as they are.
 | `Assets/`, `Packages/`, `ProjectSettings/` | Your Unity project |
 | `reflection.md` | About 300 words: what was hard, what was easy, what you added |
 | `ai-use.md` | The five AI-use questions (a no-AI answer can earn full credit) |
-| `hygiene-check.md` | Week 4 bridge assignment, **due Sunday, September 20, 2026, 11:59 PM** |
 | `screenshot.png` | Your running game, from the first 5 seconds of play |
 
 **Asset packs (Synty and others) stay out of Git.** The `.gitignore` excludes
@@ -77,7 +76,7 @@ in `reflection.md`. Never commit an exported `.unitypackage`.
 
 ```bash
 git status --short
-git add Assets ProjectSettings Packages README.md reflection.md ai-use.md hygiene-check.md screenshot.png
+git add Assets ProjectSettings Packages README.md reflection.md ai-use.md screenshot.png
 git status --short
 git commit -m "Prototype 1 progress"
 git push origin main
