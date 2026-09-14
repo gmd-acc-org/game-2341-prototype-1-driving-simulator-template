@@ -1,47 +1,40 @@
-# Prototype 0 submission checklist
+# Prototype 1 submission checklist
 
-Complete this in the cloned project before your final push.
+Complete this in your cloned project before your final push.
 
 ## Unity check
 
-- [ ] I opened `Assets/Scenes/Prototype0_HelloPlayer.unity` in Unity 6 LTS.
-- [ ] The scene contains a ground/platform, a visible player, and a camera that
-      shows the player in Play mode.
-- [ ] `Assets/Scripts/PlayerHello.cs` is attached to the player object.
-- [ ] `Start()` prints a message identifying my player in the Unity Console.
-- [ ] `Update()` performs a visible frame-by-frame behavior.
-- [ ] Under **Edit > Project Settings > Editor**, Asset Serialization is
-      **Force Text** and Version Control Mode is **Visible Meta Files**.
+- [ ] `Assets/Scenes/Prototype1_DrivingSimulator.unity` opens in Unity 6 LTS.
+- [ ] A vehicle sits on a road, with obstacles in the way.
+- [ ] The vehicle moves forward and responds to arrow-key/WASD input.
+- [ ] Movement uses `Time.deltaTime`, so it doesn't depend on frame rate.
+- [ ] The camera follows the vehicle.
 - [ ] I pressed Play and saw no compiler errors or missing-script messages.
+- [ ] **Edit > Project Settings > Editor** still shows Force Text and Visible
+      Meta Files.
 
 ## Repository check
 
-Run this from the project root:
-
 ```bash
 git status --short
-git add Assets ProjectSettings Packages README.md reflection.md
+git add Assets ProjectSettings Packages README.md reflection.md ai-use.md hygiene-check.md screenshot.png
 git status --short
 ```
 
-- [ ] The staged list includes `Assets/Scenes/Prototype0_HelloPlayer.unity`,
-      `Assets/Scripts/PlayerHello.cs`, and their `.meta` files.
-- [ ] The staged list includes `ProjectSettings/`, `Packages/manifest.json`,
-      `Packages/packages-lock.json`, `README.md`, and completed
-      `reflection.md`.
-- [ ] The staged list does **not** include `Library/`, `Temp/`, `Logs/`,
-      `Build/`, a `.unitypackage`, an exported build, or a downloaded CwC
-      project/asset package.
-- [ ] I did not copy CwC/Synty assets from the web course into this project.
+- [ ] The staged list includes my scene, my scripts, and their `.meta` files.
+- [ ] It includes `ProjectSettings/`, `Packages/manifest.json`, and
+      `Packages/packages-lock.json`.
+- [ ] It includes completed `reflection.md`, `ai-use.md`, and `screenshot.png`.
+      (`hygiene-check.md` was due earlier, on September 20.)
+- [ ] It does **not** include `Library/`, `Temp/`, `Logs/`, `Build/`, a
+      `.unitypackage`, or files from a Synty or other asset pack.
 
 ## Final push
 
 ```bash
-git commit -m "Complete Prototype 0"
+git commit -m "Complete Prototype 1"
 git push origin main
 ```
 
-- [ ] The push completed successfully to my own private Classroom50 repository.
-- [ ] I can see the new commit on the repository page.
-- [ ] `reflection.md` answers every prompt and includes the required AI-use
-      disclosure (including “I used no AI” when applicable).
+- [ ] The push succeeded, and I can see the commit on my repository page.
+- [ ] Optional: `gh student submit` printed a submission time and a link.

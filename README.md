@@ -1,85 +1,64 @@
-# Prototype 0: Hello, Player
+# Prototype 1: Driving Simulator
 
 **GAME-2341 — Game Scripting**  
-**Unity:** Unity 6 LTS (6000.x)
+**Unity:** Unity 6 LTS (6000.x)  
+**Due:** Sunday, September 27, 2026, 11:59 PM
 
-This is a **complete, blank Unity 6 starter project** for Prototype 0. It is
-separate from Unity Learn's Create with Code (CwC) course project. You will use
-the CwC web course to learn the editor and C# concepts, then show that learning
-in this small, version-controlled Unity project.
+This is a **blank Unity 6 starter project** for Prototype 1. Build the Create
+with Code (CwC) Unit 1 Driving Simulator in this repository, not in a separate
+local project.
 
-Start with [CwC: Getting Started](https://learn.unity.com/course/create-with-code/unit/getting-started?version=6.0), then use [CwC Unit 1: Player Control](https://learn.unity.com/course/create-with-code/unit/unit-1-driving-simulation?version=6.0)
-as your parallel learning path. The exact handoff is in
-[CWC-ONLINE-BRIDGE.md](CWC-ONLINE-BRIDGE.md).
+Learning path: [CwC Unit 1: Player Control](https://learn.unity.com/course/create-with-code/unit/unit-1-driving-simulation?version=6.0)
 
 ## Start here
 
-1. Complete CwC **Getting Started** in the browser. It covers Unity Hub, Unity
-   6 LTS, your Unity ID, and a C# editor.
-2. In Classroom50, accept **Prototype 0: Hello, Player**. Classroom50 creates
-   your private repository; copy its clone URL.
-3. Clone *your* private repository into a local development folder—not Google
-   Drive, OneDrive, Dropbox, or the CwC course-project folder:
+1. In Classroom 50, accept **Prototype 1: Driving Simulator** and copy the
+   clone URL of the private repository it creates.
+2. Clone it into a local development folder — not Google Drive, OneDrive, or
+   Dropbox:
 
    ```bash
-   git clone "https://github.com/YOUR-CLASSROOM50-REPOSITORY.git" GAME2341-Prototype0
-   cd GAME2341-Prototype0
+   git clone "https://github.com/YOUR-CLASSROOM50-REPOSITORY.git" GAME2341-Prototype1
    ```
 
-   Replace the quoted URL with the private repository URL Classroom50 gives
-   you.
+3. In Unity Hub choose **Add > Add project from disk**, select the
+   `GAME2341-Prototype1` folder, and open it in Unity 6 LTS.
+4. Open `Assets/Scenes/Prototype1_DrivingSimulator.unity`.
+5. When CwC Lesson 1.1 tells you to create a new project, **use this project
+   instead**. When it gives you the Unit 1 starter files, import them into this
+   project (**Assets > Import Package > Custom Package**).
 
-4. In Unity Hub, use **Add > Add project from disk** and select the cloned
-   `GAME2341-Prototype0` folder. Open it in Unity 6 LTS.
-5. Open `Assets/Scenes/Prototype0_HelloPlayer.unity`. Build the required ground,
-   visible player, and player behavior in that scene.
+The project already uses **Force Text** serialization and **Visible Meta
+Files** (**Edit > Project Settings > Editor**). Leave both settings as they are.
 
-The starter already uses **Force Text** serialization and **Visible Meta Files**.
-Verify both under **Edit > Project Settings > Editor** before working. Do not
-change them back.
+## What goes in this repository
 
-## What you will make
+| File | What it is |
+|---|---|
+| `Assets/`, `Packages/`, `ProjectSettings/` | Your Unity project |
+| `reflection.md` | About 300 words: what was hard, what was easy, what you added |
+| `ai-use.md` | The five AI-use questions (a no-AI answer can earn full credit) |
+| `hygiene-check.md` | Week 4 bridge assignment, **due Sunday, September 20, 2026, 11:59 PM** |
+| `screenshot.png` | Your running game, from the first 5 seconds of play |
 
-In `Prototype0_HelloPlayer`, create:
-
-- a ground plane or platform;
-- a visible player object, such as a cube or capsule;
-- a camera that shows the player when you press Play;
-- `Assets/Scripts/PlayerHello.cs`, attached to the player;
-- a `Start()` Console message that identifies the player; and
-- an `Update()` behavior: keyboard movement, slow rotation, or a small
-  oscillating motion.
-
-The scene already contains a camera and lighting. You are responsible for the
-player, ground, script, script attachment, behavior, and test run.
-
-## CwC stays a separate learning project
-
-The Unity Learn CwC website is the course material, not this assignment's
-starter repository. If a CwC lesson asks you to download a course project or
-assets, keep that material in a different local folder. Do **not** copy CwC or
-Synty course assets into this repository, and do not submit CwC screenshots or
-course downloads in place of this project.
-
-This starter uses only Unity's stock 3D project configuration and primitive
-objects, so it opens without any CwC package or asset download.
+**Asset packs (Synty and others) stay out of Git.** The `.gitignore` excludes
+the usual Synty import folders. Name the pack you used, and where you got it,
+in `reflection.md`. Never commit an exported `.unitypackage`.
 
 ## Commit and submit
 
-From the project root, use the same small loop as you work:
-
 ```bash
 git status --short
-git add Assets ProjectSettings Packages README.md reflection.md
+git add Assets ProjectSettings Packages README.md reflection.md ai-use.md hygiene-check.md screenshot.png
 git status --short
-git commit -m "Complete Prototype 0"
+git commit -m "Prototype 1 progress"
 git push origin main
 ```
 
-Before each commit, inspect the second `git status --short`. It should include
-your scene, script, companion `.meta` files, Unity text configuration, and
-documentation. It should never include generated Unity folders or exported
-packages.
+**Your `git push` is the submission.** Grading reads this repository. Push
+early and often; I grade the latest commit pushed on time.
 
-Use [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md) before the deadline. Your
-final `git push` to the private Classroom50 repository is the submission.
+`gh student submit` is optional. It pushes your work too and gives you a
+timestamped receipt. Use it if you want that record.
+
+Use [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md) before the deadline.

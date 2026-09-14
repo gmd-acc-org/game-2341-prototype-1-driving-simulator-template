@@ -239,7 +239,7 @@ PlayerSettings:
   shaderPrecisionModel: 0
   clonedFromGUID: 00000000000000000000000000000000
   templatePackageId: 
-  templateDefaultScene: Assets/Scenes/Prototype0_HelloPlayer.unity
+  templateDefaultScene: Assets/Scenes/Prototype1_DrivingSimulator.unity
   useCustomMainManifest: 0
   useCustomLauncherManifest: 0
   useCustomMainGradleTemplate: 0

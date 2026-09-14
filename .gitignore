@@ -1,4 +1,4 @@
-# GAME-2341 Prototype 0 — Unity source control
+# GAME-2341 Prototype 1 — Unity source control
 #
 # Track Assets/, Packages/, ProjectSettings/, and every .meta file. Unity can
 # rebuild the folders below locally; they do not belong in Classroom50.
@@ -42,3 +42,17 @@ Thumbs.db
 
 # Never ignore .meta files. Unity needs them to preserve references between
 # scenes and scripts.
+
+# Exported packages never belong in the repository
+*.unitypackage
+
+# Third-party asset packs (licensed; never redistribute). Name the pack in reflection.md instead.
+# ponytail: common Synty import roots only; add a pattern when a pack imports elsewhere
+[Aa]ssets/[Ss]ynty/
+[Aa]ssets/[Ss]ynty.meta
+[Aa]ssets/[Ss]ynty[Ss]tudios/
+[Aa]ssets/[Ss]ynty[Ss]tudios.meta
+[Aa]ssets/POLYGON*/
+[Aa]ssets/POLYGON*.meta
+[Aa]ssets/Polygon*/
+[Aa]ssets/Polygon*.meta
