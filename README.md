@@ -58,7 +58,8 @@ git push origin main
 **Your `git push` is the submission.** Grading reads this repository. Push
 early and often; I grade the latest commit pushed on time.
 
-`gh student submit` is optional. It pushes your work too and gives you a
-timestamped receipt. Use it if you want that record.
+After you push, also run `gh student submit` from inside this repository.
+It's optional for now, but please do it: later assignments will use it, and
+it gives you a timestamped receipt.
 
 Use [SUBMISSION-CHECKLIST.md](SUBMISSION-CHECKLIST.md) before the deadline.

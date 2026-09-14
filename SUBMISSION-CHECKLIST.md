@@ -37,4 +37,5 @@ git push origin main
 ```
 
 - [ ] The push succeeded, and I can see the commit on my repository page.
-- [ ] Optional: `gh student submit` printed a submission time and a link.
+- [ ] I ran `gh student submit` (optional, but please do it), and it printed a
+      submission time and a link.
