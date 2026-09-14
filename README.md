@@ -10,6 +10,34 @@ local project.
 
 Learning path: [CwC Unit 1: Player Control](https://learn.unity.com/course/create-with-code/unit/unit-1-driving-simulation?version=6.0)
 
+## One-time setup (Windows or Mac)
+
+Run these in **PowerShell** (Windows) or **Terminal** (Mac). Every command in
+this README works in both.
+
+| | Windows | Mac |
+|---|---|---|
+| Git and GitHub CLI | `winget install Git.Git GitHub.cli` | `xcode-select --install`, then `brew install gh` ([Homebrew](https://brew.sh) first if you don't have it) |
+| Unity | Unity Hub, then Unity 6 LTS | Unity Hub, then Unity 6 LTS |
+
+Then, on either system:
+
+```bash
+gh auth login
+gh extension install foundation50/gh-student
+```
+
+When Unity Hub says the project's editor version (6000.3.6f1) is missing,
+install that version, or open with a newer Unity 6 LTS and accept the upgrade.
+
+**Windows:** clone into a short folder such as `C:\dev`. Your `Documents` and
+`Desktop` folders are often synced by OneDrive, which breaks Unity projects,
+and long paths break Unity's `Library` folder. Also run once:
+`git config --global core.longpaths true`
+
+Line endings are handled by the repository's `.gitattributes`, so the same
+project opens cleanly on both systems. Don't change it.
+
 ## Start here
 
 1. In Classroom 50, accept **Prototype 1: Driving Simulator** and copy the
