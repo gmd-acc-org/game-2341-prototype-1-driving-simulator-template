@@ -2,7 +2,7 @@
 
 **GAME-2341 — Game Scripting**  
 **Unity:** Unity 6 LTS (6000.x)  
-**Due:** Sunday, September 27, 2026, 11:59 PM
+**Due:** Sunday, September 20, 2026, 11:59 PM
 
 This is a **blank Unity 6 starter project** for Prototype 1. Build the Create
 with Code (CwC) Unit 1 Driving Simulator in this repository, not in a separate
